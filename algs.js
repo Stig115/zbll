@@ -523,14 +523,14 @@ var Algs = (function () {
 
     var sets = {
        zbll: { name: "ZBLL", source: "http://algdb.net/puzzle/333/zbll", algs: [
-            { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "zbll" },
-            { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "zbll" },
-            { id: "s_3", alg: "y' R' U2 R U R' U' R U R' U R", kind: "zbll" },
-            { id: "s_4", alg: "y' R U2 R' U' R U R' U' R U' R'", kind: "zbll" },
-            { id: "s_5", alg: "y' R' U2 R U R' U R U R U R' U R U2 R'", kind: "zbll" },
-            { id: "s_6", alg: "y R' U2 R U R' U R U R U R' U R U2 R'", kind: "zbll" },
-            { id: "as_1", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "zbll" },
-            { id: "as_2", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "zbll" }
+            { id: "h_33", alg: "R U R' U R U' R' U R U2 R'", kind: "zbll" },
+            { id: "h_34", alg: "R' U' R U' R' U R U' R' U2 R", kind: "zbll" },
+            { id: "h_35", alg: "y' R' U2 R U R' U' R U R' U R", kind: "zbll" },
+            { id: "h_36", alg: "y' R U2 R' U' R U R' U' R U' R'", kind: "zbll" },
+            { id: "h_37", alg: "y' R' U2 R U R' U R U R U R' U R U2 R'", kind: "zbll" },
+            { id: "h_38", alg: "y R U2 R' U' R U' R' U' R' U' R U' R' U2 R", kind: "zbll" },
+            { id: "h_39", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "zbll" },
+            { id: "h_40", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "zbll" }
         ]},
 	coll: { name: "COLL", source: "http://www.cyotheking.com/coll", algs: [
             { id: "s_1", alg: "R U R' U R U2 R'", kind: "coll" },
