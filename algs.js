@@ -490,6 +490,16 @@ var Algs = (function () {
     }
 
     var sets = {
+        zbll: { name: "ZBLL", source: "http://www.cyotheking.com/coll", algs: [
+            { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "coll" },
+            { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "coll" },
+            { id: "s_3", alg: "y' R' U2 R U R' U' R U R' U R", kind: "coll" },
+            { id: "s_4", alg: "y' R U2 R' U' R U R' U' R U' R'", kind: "coll" },
+            { id: "s_5", alg: "y' R' U2 R U R' U R U R U R' U R U2 R'", kind: "coll" },
+            { id: "s_6", alg: "y R' U2 R U R' U R U R U R' U R U2 R'", kind: "coll" },
+            { id: "as_1", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "coll" },
+            { id: "as_2", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "coll" }
+        ]},
         coll: { name: "COLL", source: "http://www.cyotheking.com/coll", algs: [
             { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "coll" },
             { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "coll" },
