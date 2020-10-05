@@ -229,6 +229,38 @@ var Algs = (function () {
                     allowEOFlips: true
                 }
             };
+            case "zbll": return { // corner orientation of last layer (CFOP)
+                diagram: {
+                    type: "up",
+                    simplified: {
+                        hideUCenter: false,
+                        hideEdges: false,
+                        showEdgeU: true,
+                        hideCorners: false,
+                        hideULayer: false,
+                        hideMSlice: false,
+                        hideInsignificantCornerFaces: false,
+                        hideInsignificantEdgeFaces: false
+                    },
+                    stripAuf: true,
+                    eo: false
+                },
+                verify: {
+                    partial: "U.U...U.U...LLLLLL...FFFFFF...RRRRRRDDDDDDDDDBBBBBB...", // F2L+CO
+                    solved: "U.U...U.UL.LLLLLLLF.FFFFFFFR.RRRRRRRDDDDDDDDDBBBBBBB.B", // F2L+CO/CP
+                    eo: false,
+                    allowRandomM: false,
+                    allowRandomM2: false,
+                    allowRandomU: true
+                },
+                scramble: {
+                    allowAuf: true,
+                    randomSingleU: false,
+                    randomOrientationAroundY: true,
+                    randomMU: false,
+                    allowEOFlips: false
+                }
+            };	
             case "coll": return { // corner orientation of last layer (CFOP)
                 diagram: {
                     type: "up",
@@ -490,15 +522,15 @@ var Algs = (function () {
     }
 
     var sets = {
-        zbll: { name: "ZBLL", source: "http://www.cyotheking.com/coll", algs: [
-            { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "coll" },
-            { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "coll" },
-            { id: "s_3", alg: "y' R' U2 R U R' U' R U R' U R", kind: "coll" },
-            { id: "s_4", alg: "y' R U2 R' U' R U R' U' R U' R'", kind: "coll" },
-            { id: "s_5", alg: "y' R' U2 R U R' U R U R U R' U R U2 R'", kind: "coll" },
-            { id: "s_6", alg: "y R' U2 R U R' U R U R U R' U R U2 R'", kind: "coll" },
-            { id: "as_1", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "coll" },
-            { id: "as_2", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "coll" }
+        zbll: { name: "ZBLL", source: "http://algdb.net/puzzle/333/zbll", algs: [
+            { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "zbll" },
+            { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "zbll" },
+            { id: "s_3", alg: "y' R' U2 R U R' U' R U R' U R", kind: "zbll" },
+            { id: "s_4", alg: "y' R U2 R' U' R U R' U' R U' R'", kind: "zbll" },
+            { id: "s_5", alg: "y' R' U2 R U R' U R U R U R' U R U2 R'", kind: "zbll" },
+            { id: "s_6", alg: "y R' U2 R U R' U R U R U R' U R U2 R'", kind: "zbll" },
+            { id: "as_1", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "zbll" },
+            { id: "as_2", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "zbll" }
         ]},
 		coll: { name: "COLL", source: "http://www.cyotheking.com/coll", algs: [
             { id: "s_1", alg: "R U R' U R U2 R'", kind: "coll" },
