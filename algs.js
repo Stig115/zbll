@@ -522,7 +522,7 @@ var Algs = (function () {
     }
 
     var sets = {
-        zbll: { name: "ZBLL", source: "http://algdb.net/puzzle/333/zbll", algs: [
+       zbll: { name: "ZBLL", source: "http://algdb.net/puzzle/333/zbll", algs: [
             { id: "s_1", alg: "R U R' U R U' R' U R U2 R'", kind: "zbll" },
             { id: "s_2", alg: "R' U' R U' R' U R U' R' U2 R", kind: "zbll" },
             { id: "s_3", alg: "y' R' U2 R U R' U' R U R' U R", kind: "zbll" },
@@ -532,7 +532,7 @@ var Algs = (function () {
             { id: "as_1", alg: "R U R' U R U2 R' U' R' U2 R U R' U R", kind: "zbll" },
             { id: "as_2", alg: "R U R' U R U' R' U R U' R' U R' U' R2 U' R' U R' U R", kind: "zbll" }
         ]},
-		coll: { name: "COLL", source: "http://www.cyotheking.com/coll", algs: [
+	coll: { name: "COLL", source: "http://www.cyotheking.com/coll", algs: [
             { id: "s_1", alg: "R U R' U R U2 R'", kind: "coll" },
             { id: "s_2", alg: "U' R U R' U R U' R D R' U' R D' R2'", kind: "coll" },
             { id: "s_3", alg: "U2 R U R' U R2 D R' U2 R D' R2'", kind: "coll" },
