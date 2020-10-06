@@ -246,8 +246,8 @@ var Algs = (function () {
                     eo: false
                 },
                 verify: {
-                    partial: "U.U...U.U...LLLLLL...FFFFFF...RRRRRRDDDDDDDDDBBBBBB...", // F2L+CO
-                    solved: "U.U...U.UL.LLLLLLLF.FFFFFFFR.RRRRRRRDDDDDDDDDBBBBBBB.B", // F2L+CO/CP
+                    partial: undefined,
+                    solved: solvedPattern, // complete
                     eo: false,
                     allowRandomM: false,
                     allowRandomM2: false,
